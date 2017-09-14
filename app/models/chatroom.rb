@@ -1,6 +1,6 @@
 class Chatroom < ApplicationRecord
-  has_many :messages, dependent: :destroy
-  has_many :users,    through: :messages
+  has_many :messages, -> { order("created_at ASC") }, dependent: :destroy
+  has_many :users, through: :messages
   
   validates :topic, presence: true, uniqueness: true
 
