@@ -16,6 +16,9 @@ gem 'pg', '~> 0.18.4'
 #Action Cable in production
 gem 'redis', '~> 3.3'
 
+#Authentication
+gem 'devise'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
