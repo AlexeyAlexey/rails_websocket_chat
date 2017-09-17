@@ -19,6 +19,8 @@ gem 'redis', '~> 3.3'
 #Authentication
 gem 'devise'
 
+gem "request_store", "1.0.5"
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
